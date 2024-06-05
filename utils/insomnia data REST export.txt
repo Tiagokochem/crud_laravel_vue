@@ -1,0 +1,173 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-06-04T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2023.3.0",
+  "resources": [
+    {
+      "_id": "__WORKSPACE_ID__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "name": "Laravel API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "__ENVIRONMENT_ID__",
+      "parentId": "__WORKSPACE_ID__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost/api"
+      },
+      "_type": "environment"
+    },
+    {
+      "_id": "__REQUEST_GROUP_ID_LEVELS__",
+      "parentId": "__WORKSPACE_ID__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "name": "Levels",
+      "_type": "request_group"
+    },
+    {
+      "_id": "__REQUEST_GROUP_ID_DEVELOPERS__",
+      "parentId": "__WORKSPACE_ID__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "name": "Developers",
+      "_type": "request_group"
+    },
+    {
+      "_id": "__REQUEST_ID_LIST_LEVELS__",
+      "parentId": "__REQUEST_GROUP_ID_LEVELS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/levels",
+      "name": "List Levels",
+      "method": "GET",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_CREATE_LEVEL__",
+      "parentId": "__REQUEST_GROUP_ID_LEVELS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/levels",
+      "name": "Create Level",
+      "method": "POST",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \"level\": \"Level Name\" }"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_UPDATE_LEVEL__",
+      "parentId": "__REQUEST_GROUP_ID_LEVELS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/levels/:id",
+      "name": "Update Level",
+      "method": "PUT",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \"level\": \"Updated Level Name\" }"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_DELETE_LEVEL__",
+      "parentId": "__REQUEST_GROUP_ID_LEVELS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/levels/:id",
+      "name": "Delete Level",
+      "method": "DELETE",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_LIST_DEVELOPERS__",
+      "parentId": "__REQUEST_GROUP_ID_DEVELOPERS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/developers",
+      "name": "List Developers",
+      "method": "GET",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_CREATE_DEVELOPER__",
+      "parentId": "__REQUEST_GROUP_ID_DEVELOPERS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/developers",
+      "name": "Create Developer",
+      "method": "POST",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \"level_id\": 1, \"name\": \"Developer Name\", \"gender\": \"M\", \"date_of_birth\": \"1990-01-01\", \"hobby\": \"Programming\" }"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_UPDATE_DEVELOPER__",
+      "parentId": "__REQUEST_GROUP_ID_DEVELOPERS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/developers/:id",
+      "name": "Update Developer",
+      "method": "PUT",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \"level_id\": 2, \"name\": \"Updated Developer Name\", \"gender\": \"F\", \"date_of_birth\": \"1990-01-01\", \"hobby\": \"Playing Guitar\" }"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "__REQUEST_ID_DELETE_DEVELOPER__",
+      "parentId": "__REQUEST_GROUP_ID_DEVELOPERS__",
+      "created": "2024-06-04T00:00:00.000Z",
+      "modified": "2024-06-04T00:00:00.000Z",
+      "url": "{{ base_url }}/developers/:id",
+      "name": "Delete Developer",
+      "method": "DELETE",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "Accept", "value": "application/json" }
+      ],
+      "_type": "request"
+    }
+  ]
+}
+
