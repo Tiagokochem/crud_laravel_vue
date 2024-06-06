@@ -1,0 +1,15 @@
+# Ignorar diretório de dependências
+/vendor/
+
+# Ignorar arquivos de log
+/storage/*.log
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar arquivos gerados pelo Homestead
+Homestead.yaml
+Homestead.json
+
+# Ignorar arquivos de cache do PHPUnit
+.phpunit.result.cache
