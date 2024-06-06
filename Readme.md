@@ -4,7 +4,7 @@ Este projeto é uma aplicação full-stack desenvolvida em Laravel (backend) e V
 
 ## Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado o Node.js e o Composer em sua máquina.
+Antes de começar, certifique-se de ter instalado o Node.js, Composer e PHP 8.2 em sua máquina.
 
 ## Configuração
 
@@ -15,9 +15,11 @@ Navegue até o diretório backend:
 bash cd backend
 
 
+
 Instale as dependências do PHP usando o Composer:
 
 bash composer install
+
 
 
 Execute as migrações do banco de dados:
@@ -25,9 +27,12 @@ Execute as migrações do banco de dados:
 bash php artisan migrate
 
 
+
 Inicie o servidor de desenvolvimento do Laravel:
 
 bash php artisan serve
+
+
 
 
 ### Frontend
@@ -37,9 +42,11 @@ Após configurar o backend, volte ao diretório raiz do projeto e navegue até o
 bash cd frontend
 
 
+
 Instale as dependências do Node.js:
 
 bash npm install
+
 
 
 Compile e reinicie automaticamente o aplicativo para o desenvolvimento:
@@ -47,7 +54,12 @@ Compile e reinicie automaticamente o aplicativo para o desenvolvimento:
 bash npm run serve
 
 
+
 ## Endpoints Disponíveis
+Lembrando de adicionar no header: 
+
+Content-Type: application/json
+Accept: application/json
 
 ### Níveis
 
