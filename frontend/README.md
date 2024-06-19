@@ -1,15 +1,7 @@
-# my-project
+# frontend
 
 ## Project setup
 ```
-npm install
-```
+APENAS ENTRAR NA URL:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+http://localhost:3000
